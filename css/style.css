@@ -1,4 +1,7 @@
 /* HEADER */
+#title{
+    height: 50px;
+}
 
 h1{
     color: rgb(41, 177, 221);
@@ -20,4 +23,38 @@ h1{
 #optns{
     margin-left: 20px;
     height: 25px;
+}
+
+/* MAIN */
+#icon-box{
+    background-color: rgb(221, 221, 221);
+    height: calc(100vh - 110px);
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.fonts{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);;
+}
+
+.icons i{
+    margin-top: 1rem;
+    font-size: 35px;
 }
