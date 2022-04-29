@@ -1,0 +1,23 @@
+/* HEADER */
+
+h1{
+    color: rgb(41, 177, 221);
+}
+
+#optns-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(41, 177, 221);
+    color: white;
+}
+
+#optns-box:first-child{
+    height: 25px;
+}
+
+#optns{
+    margin-left: 20px;
+    height: 25px;
+}
