@@ -52,6 +52,7 @@ h1{
     height: 80px;
     border-radius: 10px;
     background-color: rgb(245, 245, 245);;
+    box-shadow: grey 2px 2px 0 0;
 }
 
 .icons i{
