@@ -36,3 +36,16 @@ main{
     height: 100px;
     background-color: rgb(245, 245, 245);
 }
+
+/* CLASSI COLORI */
+.blue{
+    color: blue;
+}
+
+.orange{
+    color: orange;
+}
+
+.green{
+    color: green;
+}
