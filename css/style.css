@@ -1,0 +1,14 @@
+/* HEADER */
+#title{
+    height: 40px;
+}
+
+#subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 176, 221);
+    color: white;
+    height: 60px;
+    margin-top: 0.5rem;
+}
