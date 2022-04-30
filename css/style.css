@@ -12,3 +12,27 @@
     height: 60px;
     margin-top: 0.5rem;
 }
+
+/* MAIN */
+main{
+    background-color: rgb(221, 221, 221);
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.fonts{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+}
