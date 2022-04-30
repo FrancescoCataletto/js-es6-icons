@@ -128,8 +128,4 @@ const icons = [
 	}
 ];
 
-// PRENDO VALORI DEL MENU SELECT
-const all = document.getElementById("all").value;
-const animals = document.getElementById("animals").value;
-const foods = document.getElementById("foods").value;
-const users = document.getElementById("users").value;
+
