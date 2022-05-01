@@ -166,13 +166,14 @@ function iconGenerator(){
 // RICHIAMO LA FUNZIONE BASE CON TUTTI GLI OGGETTI DELL'ARRAY PER MOSTRARLA ALLìAPERTURA DELLA PAGINA
 createBox(icons);
 
-// FUNZIONE PER CREARE DIV DELLE ICONE E STAMPARLO IN PAGINA EPR OGNI ELEMENTO DELL'ARRAY CON DETERMINATE CARATTERISTICHE
+// FUNZIONE PER CREARE DIV DELLE ICONE E STAMPARLO IN PAGINA PER OGNI ELEMENTO DELL'ARRAY CON DETERMINATE CARATTERISTICHE
 function createBox(array){
 	iconDisplay.innerHTML = " ";
 	for(let element of array){
 		const cell = document.createElement("div");
 		iconDisplay.append(cell);
 		cell.classList.add("icon-box");
-		cell.innerHTML = `<i class="${element.prefix}solid ${element.prefix}${element.name}"></i><p>${element.name}</p>`
+		cell.innerHTML = `<i class="${element.prefix}solid ${element.prefix}${element.name} style.color = ${element.color}"></i><p>${element.name}</p>`
 	}
 }
+

@@ -40,6 +40,10 @@ main{
     background-color: rgb(245, 245, 245);
 }
 
+.icon-box i{
+    font-size: 30px;
+}
+
 /* CLASSI COLORI */
 .blue{
     color: blue;
