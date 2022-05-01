@@ -138,16 +138,41 @@ const vegetablesArr = icons.filter(el => el.type === "vegetable");
 const usersArr = icons.filter(el => el.type === "user");
 
 
+const selectIcons = document.getElementById("icons-type");
+
+
+// PRENDO IL VALORE DALL'OPTION E LO ASSEGNO ALL'ARRAY
+const all = selectIcons[0].value;
+const animals = selectIcons[1].value;
+const foods = selectIcons[2].value;
+const users = selectIcons[3].value;
+
+// BOTTONE PER SELEZIONARE LE ICONE DA MOSTRARE
+selectIcons.addEventListener("click", iconGenerator);
+
+// FUNZIONE CHE IN BASE AL VALUE DEL SELECT RICHIAMA UNA FUNZIONE PER STAMPARE LE ICONE CORRETTE
+function iconGenerator(){
+	if(selectIcons.value === all){
+		createBox(icons);
+	}else if(selectIcons.value === animals){
+		createBox(animalsArr);
+	}else if(selectIcons.value === foods){
+		createBox(vegetablesArr);
+	}else if(selectIcons.value === users){
+		createBox(usersArr);
+	}
+}
+
+// RICHIAMO LA FUNZIONE BASE CON TUTTI GLI OGGETTI DELL'ARRAY PER MOSTRARLA ALLìAPERTURA DELLA PAGINA
 createBox(icons);
 
+// FUNZIONE PER CREARE DIV DELLE ICONE E STAMPARLO IN PAGINA EPR OGNI ELEMENTO DELL'ARRAY CON DETERMINATE CARATTERISTICHE
 function createBox(array){
+	iconDisplay.innerHTML = " ";
 	for(let element of array){
 		const cell = document.createElement("div");
 		iconDisplay.append(cell);
 		cell.classList.add("icon-box");
 		cell.innerHTML = `<i class="${element.prefix}solid ${element.prefix}${element.name}"></i><p>${element.name}</p>`
-		// console.log(element.prefix);
-		console.log(element.name);
 	}
 }
-
