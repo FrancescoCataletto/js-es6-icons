@@ -138,3 +138,16 @@ const vegetablesArr = icons.filter(el => el.type === "vegetable");
 const usersArr = icons.filter(el => el.type === "user");
 
 
+createBox(icons);
+
+function createBox(array){
+	for(let element of array){
+		const cell = document.createElement("div");
+		iconDisplay.append(cell);
+		cell.classList.add("icon-box");
+		cell.innerHTML = `<i class="${element.prefix}solid ${element.prefix}${element.name}"></i><p>${element.name}</p>`
+		// console.log(element.prefix);
+		console.log(element.name);
+	}
+}
+
