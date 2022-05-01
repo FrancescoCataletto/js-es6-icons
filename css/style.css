@@ -20,11 +20,6 @@ main{
     overflow: auto;
 }
 
-.fonts{
-    display: flex;
-    justify-content: center;
-}
-
 .icon-box{
     display: flex;
     flex-direction: column;
@@ -32,7 +27,7 @@ main{
     align-items: center;
     border-radius: 10px;
     margin: 10px;
-    width: 250px;
+    width: 200px;
     height: 100px;
     background-color: rgb(245, 245, 245);
 }

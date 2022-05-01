@@ -128,4 +128,13 @@ const icons = [
 	}
 ];
 
+// PRENDO ID CONTENITORE
+const iconDisplay = document.getElementById("icons-container");
+
+// GENERO NUOVI ARRAY CONTENENTI SOLO IL KAY:VALUE PAIR CHE MI INTERESSA
+
+const animalsArr = icons.filter(el => el.type === "animal");
+const vegetablesArr = icons.filter(el => el.type === "vegetable");
+const usersArr = icons.filter(el => el.type === "user");
+
 
